@@ -32,7 +32,7 @@ class App extends Component {
     let indonesia = require('moment/locale/id');
     Moment.updateLocale('id', indonesia);
     return (
-      <div>
+      <div className="container">
         <img src={image} alt="demo" width={300}/>
         <h3>Aplikasi Aktivitas Harian</h3>
         <p>{Moment().format('dddd')} - {Moment().format('LLL')}</p>
